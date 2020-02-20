@@ -32,3 +32,13 @@ picture{
     box-shadow: bisque;
     text-align: center;
 }
+
+picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 2.6s;
+    padding: 5px;
+}
