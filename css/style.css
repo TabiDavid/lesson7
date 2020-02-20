@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #BF1363;
+}
+
+h1{
+    font-size: large;
+    text-align: center;
+
+}
+
+picture{
+
+    margin: auto;
+    box-shadow: bisque;
+    background-color: #DCCCFF;
+    width: 800px;
+
+}
+img{
+   margin: auto;
+    width: 300px;
+    height: 400px;
+}
