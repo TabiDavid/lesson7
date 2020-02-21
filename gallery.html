@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Preston page, where we can find information about weather and be ready for any ciscunstances">
+    <link rel="shortcut icon" href="img/favicon(1).ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/preston-6.js"></script>
+    <Script src="js/windchill.js"></Script>
+    <title>Preston Page, weather site give information every hour.</title>
+    </head> 
+    <body onload="getUpdate(), pancakeD(), windChill()">
+        <div class="container1">
+            <div id="pancake">Friday = Preston pancakes in the park! 9:00 a.m. at the city park.</div>
+        <div>
+        <header>
+            <picture>
+                <img src="img/iconfinder_sunset_3521354.png" alt="The sun and the clound">
+            </picture>
+            <section class="headings">
+                <h1>Today Weather</h1>
+                <div class="m">Ready to rock on roll!</div>
+            </section>
+        </header>
+        </div>
+        <div>
+        <nav class="">
+            <ul class="navigation">
+                <li><a class="responsive" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+
+        </nav>
+        </div>
+        <div>
+        <main>
+            <h2>Preston Idaho Town</h2>
+            <div class="herodiv">
+                <picture>
+                    <source srcset="img/large.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/media.jpg" media="(min-width: 700px)">
+                    <img src="img/small.jpg" alt="land scape">
+                  </picture>
+                <section id="weathersummary">
+                   <h3>Weather Sumary</h3>
+                   <p>Currently: Partly Cloudy</p>
+                   <p>Precipitation: 22 inches</p>
+                   <p>Humidity: 68%</p>
+                    <p>Temperature: <span id="temp">69</span>°F</p>
+                    <p>Wind Speed: <span id="windspeed">9</span> MPH</p>
+                    <p>Wind Chill: <span id="windchill"></span> MPH</p>
+                </section>
+                <section class="forecast">
+                    <h3 id="fiveDayBanner">5 Day Forecast</h3>
+                    <div class="allboxes">
+                      <div class="box" id="day1">
+                        <span class="label">Wed</span>
+                        <span class="icon">☀️</span>
+                        <span class="detail">56 F</span>
+                      </div>
+                      <div class="box" id="day2">
+                        <span class="label">Thu</span>
+                        <span class="icon">☀️</span>
+                        <span class="detail">56 F</span>
+                      </div>
+                      <div class="box" id="day3">
+                        <span class="label">Fri</span>
+                        <span class="icon">☀️</span>
+                        <span class="detail">56 F</span>
+                      </div>
+                      <div class="box" id="day4">
+                        <span class="label">Sat</span>
+                        <span class="icon">☀️</span>
+                        <span class="detail">56 F</span>
+                      </div>
+                      <div class="box" id="day5">
+                        <span class="label">Sun</span>
+                        <span class="icon">☀️</span>
+                        <span class="detail">56 F</span>
+                      </div>
+                      </div>
+                      </section>
+                      <section class="article">
+                       
+                        <img src="img/woman.jpg" alt="Women sitting">
+                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue tortor eget pulvinar lobortis.
+                          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ac dolor augue.
+                          Pellentesque mi mi, laoreet et dolor sit amet, ultrices varius risus. Nam vitae iaculis elit. Aliquam mollis interdum libero. Sed sodales placerat egestas. Vestibulum ut arcu aliquam purus viverra dictum vel sit amet mi.
+                          Duis nisl mauris, aliquam sit amet luctus eget, dapibus in enim. Sed velit augue, pretium a sem aliquam, congue porttitor tortor.
+                          Sed tempor nisl a lorem consequat, id maximus erat aliquet. Sed sagittis porta libero sed condimentum.
+                          Aliquam finibus lectus nec ante congue rutrum. Curabitur quam quam, accumsan id ultrices ultrices, tempor et tell us.
+                      </p>
+                    </section>
+                    
+                    <section class="contact">
+                  
+                      <p class="info">Contact Information<br>
+                              Name: David Tabi<br>
+                              Email: todayweather.live <br>
+                              Phone : 593-455-5433<br>
+                      </p>
+                          <img src="img/map.jpg" class = "map" alt="A map of preston">
+                    </section>
+        </main>
+        </div>
+        <footer>
+            <div id="end">&copy; Today Weather | Attribution | David Tabi
+                
+                <div id="outputDiv"></div>
+             </div>
+        </footer>
+        </div>
+    </body>
+</html>
